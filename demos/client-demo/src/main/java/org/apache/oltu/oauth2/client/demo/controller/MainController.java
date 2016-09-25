@@ -83,6 +83,12 @@ public class MainController {
         } else if (Utils.LINKEDIN.equalsIgnoreCase(app)) {
             selected = true;
             addLinkedInParams(oauthParams);
+        } else if (Utils.MICROSOFT.equalsIgnoreCase(app)) {
+            selected = true;
+            addMicrosfotParams(oauthParams);
+        } else if (Utils.INSTAGRAM.equalsIgnoreCase(app)) {
+            selected = true;
+            addInstagramParams(oauthParams);
         }
 
         if (selected) {
@@ -124,6 +130,18 @@ public class MainController {
         oauthParams.setAuthzEndpoint(Utils.GITHUB_AUTHZ);
         oauthParams.setTokenEndpoint(Utils.GITHUB_TOKEN);
         oauthParams.setScope(Utils.GITHUB_SCOPE);
+    }
+    
+    private void addMicrosfotParams(OAuthParams oauthParams) {
+        oauthParams.setAuthzEndpoint(Utils.MICROSOFT_AUTHZ);
+        oauthParams.setTokenEndpoint(Utils.MICROSOFT_TOKEN);
+        oauthParams.setScope(Utils.MICROSOFT_SCOPE);
+    }
+    
+    private void addInstagramParams(OAuthParams oauthParams) {
+        oauthParams.setAuthzEndpoint(Utils.INSTAGRAM_AUTHZ);
+        oauthParams.setTokenEndpoint(Utils.INSTAGRAM_AUTHZ);
+        oauthParams.setScope(Utils.INSTAGRAM_SCOPE);
     }
 
     @RequestMapping("/decode")

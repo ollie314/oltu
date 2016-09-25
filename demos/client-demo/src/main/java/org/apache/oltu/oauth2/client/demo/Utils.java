@@ -80,6 +80,18 @@ public final class Utils {
     public static final String GITHUB_TOKEN = OAuthProviderType.GITHUB.getTokenEndpoint();
     public static final String GITHUB_SCOPE = "";
     public static final String GITHUB_RESOURCE_URL = "https://api.github.com/user";
+    
+    public static final String MICROSOFT = OAuthProviderType.MICROSOFT.getProviderName();
+    public static final String MICROSOFT_AUTHZ = OAuthProviderType.MICROSOFT.getAuthzEndpoint();
+    public static final String MICROSOFT_TOKEN = OAuthProviderType.MICROSOFT.getTokenEndpoint();
+    public static final String MICROSOFT_SCOPE = "";
+    public static final String MICROSOFT_RESOURCE_URL = "";
+    
+    public static final String INSTAGRAM = OAuthProviderType.INSTAGRAM.getProviderName();
+    public static final String INSTAGRAM_AUTHZ = OAuthProviderType.INSTAGRAM.getAuthzEndpoint();
+    public static final String INSTAGRAM_TOKEN = OAuthProviderType.INSTAGRAM.getTokenEndpoint();
+    public static final String INSTAGRAM_SCOPE = "";
+    public static final String INSTAGRAM_RESOURCE_URL = "";
 
     public static final String SMART_GALLERY = "smart_gallery";
     public static final String SMART_GALLERY_AUTHZ = "http://localhost:8090/oauth/authorize";
